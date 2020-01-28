@@ -16,7 +16,7 @@ let solmeister = require ('solmeister');
 
 -> ```edit (code, callback)```: **code** is the source code on which to operate (This can be a String or a Buffer object) & **callback** is the function ```solmeister``` calls upon entering every Node during the AST treversal. The callback is passed the ```node``` just entered.
 
-##Properties of node
+## Properties of node
 -> ```node.parent```: access the parent node of the current node
 
 -> ```node.getSourceCode ()```: get the source code of the current node
@@ -54,7 +54,7 @@ console.log ('Version: ', i.version);
 console.log (output);
 ```
 
-##Code before transform
+## Code before transform
 ```
 contract Visual {
 	uint[] x = [13,212,334,44,52];
@@ -62,7 +62,7 @@ contract Visual {
 }
 ```
 
-##Code after transform
+## Code after transform
 ```
 contract Visual {
 	uint[] x = [13.00,212.00,334.00,44.00,52.00];
