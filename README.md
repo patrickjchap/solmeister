@@ -1,17 +1,17 @@
 # solmeister
 Edit your solidity code by applying transforms on its (Spider Monkey compliant) AST's nodes.
 
-#Installation
+# Installation
 ```
 npm install solmeister
 ```
 
-#Usage
+# Usage
 ```js
 let solmeister = require ('solmeister');
 ```
 
-##Available methods
+## Available methods
 -> ```version ()```: Version information
 
 -> ```edit (code, callback)```: **code** is the source code on which to operate (This can be a String or a Buffer object) & **callback** is the function ```solmeister``` calls upon entering every Node during the AST treversal. The callback is passed the ```node``` just entered.
@@ -23,7 +23,7 @@ let solmeister = require ('solmeister');
 
 -> ```node.transform (finalCode)```: apply the transform on the node by replacing its source code with ```finalCode```.
 
-#Example
+# Example
 ```js
 /**
  * Append '.00' to every integer and change every Identifier name to lowercase, like:
